@@ -14,7 +14,7 @@ const delay = 200; // Adjust delay to avoid overloading the server
 // Custom headers
 const headers = {
   Authorization:
-    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiWVRVSWhFMFl0UENTN2pFRkRHaUFqVm1PNmVxUjlSZlVjRWozVThwOHVObDVmZk5ISVFrdDJtZ1FnOFpsRFo5SWNtbHlVckZMOFRXUEpmcVN2NzVrcXNNM1pweWRHVXdOWC9BV2thR2lSVW9lL2FlNlIvakpZaDMrUXRBS3dLSUlmZTRzWm8zUFQ4YkFNQlpYdUNFZ3hVVGRZMy8vdHhtQ3MyeDZmYnl0ZjdaMmQxZC96STRhTlBWMFdJejlDdEdzWS9sdzNOaHJhdEtrOVJ0K2gwUkZSYWNKVysyYkVBdmtNQ2tNUkhONmYyS2xWUDRPUlcxNjFCd3BNNUhkekl4WmN4RzAxL28rQW1mR1NlMndHL0wzTzJ6RnRqK2JveHFzUGFRNyIsImV4cCI6MTcyODA2NDUzMn0.ytgo1P9dnPG0Xzxuqa2KLFh-nGw3a7XoH04MDqeUsho", // Example of an Authorization header
+    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoibzBWQXltTGluS3hKOWRFRHRzQndTU2Zvb2VoMnBPbUxoU0RZd0U0SDlsWFlreG5Ub2wxemxVUDFkZ0o0NkZ2VjR0VFJJRVZFWHJKUnVYKzBydmo2VEJ0czJLMldDVHNaTGxhN1BrQnlsLzVYZFlMWEpnYi9Ma3k2eHdZOGx4M0NLMkVEMUh4RGhNajJIS3BibWtycEN1MFQzOFJaeHJ6eEZ2cVYzaGpuL05HbFFZR051NWowaFhEQllMWmtnNUdMNDJkT1lHR3VMRldUVmF6bDR0Vy9XR3BXMVp3ZUQ2bGQ4U1NKQ3diWUlENHNqY1NZTTBRYVdVYnBDSEw5RXJWTzJPbGZxaHFnUmZVMUMySEp2NUhxMXRrSnJaa1NQYzFUQWFwRSIsImV4cCI6MTcyODQ3Nzg4NH0.WOpxMeM5ts268o6_ylfyw7i5MAUsK26yJ4fe-bMQ--E", // Example of an Authorization header
   "Content-Type": "application/json", // Example content type (application/json)
   "x-version-code": 314,
   "x-platform-code": "an",
@@ -26,9 +26,9 @@ const headers = {
 const makePostRequest = async (i) => {
   try {
     const postData = {
-      chatroom_id: "74937",
+      chatroom_id: "99346",
       temporary_id: "-9080000",
-      text: `from script: load testing ${94 + i}`,
+      text: `message ${i}`,
       // Add more key-value pairs as needed
     }
     const response = await axios.post(apiUrl, postData, { headers });
