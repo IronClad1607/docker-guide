@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 // The REST API URL
-const apiUrl = "https://betaauth.likeminds.community/conversation";
+const apiUrl = "https://auth.likeminds.community/conversation";
 
 // Number of requests
 const numRequests = 200;
@@ -14,7 +14,7 @@ const delay = 200; // Adjust delay to avoid overloading the server
 // Custom headers
 const headers = {
   Authorization:
-    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoibzBWQXltTGluS3hKOWRFRHRzQndTU2Zvb2VoMnBPbUxoU0RZd0U0SDlsWFlreG5Ub2wxemxVUDFkZ0o0NkZ2VjR0VFJJRVZFWHJKUnVYKzBydmo2VEJ0czJLMldDVHNaTGxhN1BrQnlsLzVYZFlMWEpnYi9Ma3k2eHdZOGx4M0NLMkVEMUh4RGhNajJIS3BibWtycEN1MFQzOFJaeHJ6eEZ2cVYzaGpuL05HbFFZR051NWowaFhEQllMWmtnNUdMNDJkT1lHR3VMRldUVmF6bDR0Vy9XR3BXMVp3ZUQ2bGQ4U1NKQ3diWUlENHNqY1NZTTBRYVdVYnBDSEw5RXJWTzJPbGZxaHFnUmZVMUMySEp2NUhxMXRrSnJaa1NQYzFUQWFwRSIsImV4cCI6MTcyODQ3Nzg4NH0.WOpxMeM5ts268o6_ylfyw7i5MAUsK26yJ4fe-bMQ--E", // Example of an Authorization header
+    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiRTU2eWJSczRORTFzKzVMa2JPR0tVZGtWbkFxUHNoMGpMTkdIdWpiSWM1dGFmejdramJocmJwTHd0ZG1wbDc4QmtROFlibUNodlczT09KMDhkdkxMNTVMaEFOMDhXZ2R3Ynk4eEM4S1UzSVRhMHFudi9rN04yTi92MU0rNlpaeWtYV3BwRTZqZmM3N28xaDlhWmgzNW1kYnZVdjg2V3h4UFN5eGZSWjlja2ZSQmpUSkJxeGRtb3NacStabXYrRGR6c2w2NHpGMHc5Y3ZOQ0x0QllrdXRzcE5KWnJuaFJpTmxhNzdtdmY0My9LakovTG9uL2VvZGl6UXRTY3VzTnhrZHYrTGZ3RnJBb3p0UDNMNVAvSkFzWDIxOTdheGJ2K1FDd2NsbyIsImV4cCI6MTczMzgyOTgwNn0.q0Dtb9RL4APxL8HfMXTc8I7j8g3zb2s6AO_ynZhcjjE", // Example of an Authorization header
   "Content-Type": "application/json", // Example content type (application/json)
   "x-version-code": 314,
   "x-platform-code": "an",
@@ -26,7 +26,7 @@ const headers = {
 const makePostRequest = async (i) => {
   try {
     const postData = {
-      chatroom_id: "99346",
+      chatroom_id: "4310567",
       temporary_id: "-9080000",
       text: `message ${i}`,
       // Add more key-value pairs as needed
